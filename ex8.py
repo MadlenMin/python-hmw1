@@ -1,10 +1,10 @@
-def revers(a):
-	return (a[:: -1])
-	
+nbr = int(input("Type a number : "))
 
-user_input = input("type smthg : ")
+if nbr > 1:
 
-#output = reversed(user_input)
-
-print(revers(user_input))
-
+	for i in range(2,(nbr//2)):
+		if((nbr % i)== 0):
+			print(f"{nbr} is not a prime number")
+			break
+	else:
+		print(f"{nbr} is a prim number")
